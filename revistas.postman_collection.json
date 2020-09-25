@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "8997e3b9-ab35-4df5-9892-76fa1b8be168",
+		"name": "revistas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /revistas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"Revista 01\",\n    \"autor\": \"Autor 01\",\n    \"editora\": \"Editora 01\",\n    \"dataDePublicacao\": \"2020-09-24\",\n    \"status\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/revistas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"revistas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /revistas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/revistas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"revistas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /revistas/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/revistas/5f6d33fa1f2ac20bcbfcb6f5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"revistas",
+						"5f6d33fa1f2ac20bcbfcb6f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /revistas/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"5f6d33fa1f2ac20bcbfcb6f5\",\n    \"titulo\": \"Revista 02\",\n    \"autor\": \"Autor 02\",\n    \"editora\": \"Editora 02\",\n    \"dataDePublicacao\": \"2020-09-25\",\n    \"status\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/revistas/5f6d33fa1f2ac20bcbfcb6f5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"revistas",
+						"5f6d33fa1f2ac20bcbfcb6f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /revistas/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/revistas/5f6d33ddfee6f03f718b942b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"revistas",
+						"5f6d33ddfee6f03f718b942b"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
